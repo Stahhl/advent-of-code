@@ -13,8 +13,8 @@ def part2(data):
                 if a + b + c == 2020:
                     return a * b * c
 
-dataStr = open('01/input.txt', 'r', encoding='utf-8').read().splitlines()
-dataInt = [int(x) for x in dataStr]
+input = open('01/input.txt', 'r', encoding='utf-8').read().splitlines()
+dataInt = [int(x) for x in input]
 
 print(part1(dataInt))
 print(part2(dataInt))

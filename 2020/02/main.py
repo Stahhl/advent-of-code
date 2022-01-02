@@ -1,10 +1,10 @@
 # https://adventofcode.com/2020/day/2
 
-data = open('02/input.txt', 'r', encoding='utf-8').read().splitlines()
+input = open('02/input.txt', 'r', encoding='utf-8').read().splitlines()
 
 def part1():
     answer = 0
-    for row in data:
+    for row in input:
         lower = int(row[0:row.index("-")])
         upper = int(row[row.index("-")+1:row.index(" ")])
         letter = row[row.index(" ")+1:row.index(":")].strip()
@@ -16,7 +16,7 @@ def part1():
 
 def part2():
     answer = 0
-    for row in data:
+    for row in input:
         lower = int(row[0:row.index("-")])
         upper = int(row[row.index("-")+1:row.index(" ")])
         letter = row[row.index(" ")+1:row.index(":")].strip()
